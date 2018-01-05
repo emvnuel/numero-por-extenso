@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/index.js"></script>
+        <title>Número por Extenso</title>
+    </head>
+    <body>
+        <div class="container marginx-auto">
+            <h1>Número por Extenso</h1>
+            <form class="form">
+                <label for="numero">Número</label><br>
+                <input st type="number" id="numero" step="1" min="0" max="999999999999999999999999" required>
+
+                <button class="btn" type="submit">Conveter Número</button>
+            </form>
+            <div id="numero-por-extenso"></div>
+        </div>
+        <script>
+            const form = document.querySelector('.form');
+            const nExtenso = document.querySelector('#numero-por-extenso');
+            
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const numero = document.querySelector('#numero');
+                nExtenso.textContent = converterNumeroParaExtenso(numero.value);
+            });
+        </script>
+    </body>
+</html>

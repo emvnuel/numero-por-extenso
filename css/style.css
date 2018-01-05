@@ -1,0 +1,94 @@
+:root {
+    --base: #111;
+    --primary: #006EE6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--base);
+    background: #ECECEC;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type="number"] {
+    border-radius: .25rem;
+    padding: .5rem;
+    background-color: #FDFDFD;
+    border: 1px solid #cccccc;
+    font-size: 1.5rem;
+    width: 100%;    
+    -moz-appearance:textfield;
+}
+
+label {
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#numero-por-extenso {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 960px;
+    padding: 1rem;
+}
+
+.marginx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    border: none;
+    border-radius: .3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: .8rem 1rem;
+    margin-top: .6rem;
+    color: #FFF;
+    background-color: var(--primary);
+}
+
+@media screen and (max-width: 48rem) {
+    h1 {
+        font-size: 2rem;
+    }
+    input[type="number"] {
+        font-size: 1.3rem;
+    }
+    #numero-por-extenso {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 37rem) {
+    .btn {
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #numero-por-extenso {
+        font-size: 1.15rem;
+    }
+}
