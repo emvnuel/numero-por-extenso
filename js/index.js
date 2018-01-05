@@ -29,7 +29,7 @@ function isDezenaDez(numero) {
     return numero > 10 && numero < 20;
 }
 
-function OrdernarEmCentenas(numero) {
+function ordernarEmCentenas(numero) {
     const strNumero = numero.toString();
     let centenas = [];
     for(let i = 0; i < quantidadeCentenasDeTres(numero); i++) {    
@@ -111,6 +111,6 @@ function numeroPorExtenso(centenas) {
 }
 
 function converterNumeroParaExtenso(numero) {
-    return numeroPorExtenso(centenasExtenso(OrdernarEmCentenas(numero)))
+    return numeroPorExtenso(centenasExtenso(ordernarEmCentenas(numero)))
 }
 
