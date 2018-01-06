@@ -47,6 +47,10 @@ h1 {
     font-size: 1.5rem;
 }
 
+#numero-por-extenso::first-letter {
+    text-transform: uppercase;
+}
+
 .container {
     max-width: 960px;
     padding: 1rem;
