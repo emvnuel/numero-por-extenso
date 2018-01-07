@@ -76,11 +76,17 @@ h1 {
     h1 {
         font-size: 2rem;
     }
+    
     input[type="number"] {
         font-size: 1.3rem;
     }
+    
     #numero-por-extenso {
         font-size: 1.3rem;
+    }
+
+    label {
+        font-size: 1.2rem;
     }
 }
 
@@ -88,11 +94,16 @@ h1 {
     .btn {
         width: 100%;
     }
+
     h1 {
         font-size: 1.5rem;
     }
 
     #numero-por-extenso {
         font-size: 1.2rem;
+    }
+
+    label {
+        font-size: 1.1rem;
     }
 }
