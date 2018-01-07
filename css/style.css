@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     color: var(--base);
     background: #ECECEC;
 }
@@ -62,12 +62,14 @@ h1 {
 }
 
 .btn {
+    font-family: Helvetica, Arial, sans-serif;
     border: none;
     border-radius: .3rem;
     font-size: 1.3rem;
     font-weight: bold;
     padding: .8rem 1rem;
     margin-top: .6rem;
+    border-bottom: 3px solid #0058b8;
     color: #FFF;
     background-color: var(--primary);
 }
