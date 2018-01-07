@@ -111,6 +111,6 @@ function numeroPorExtenso(centenas) {
 }
 
 function converterNumeroParaExtenso(numero) {
-    return numeroPorExtenso(centenasExtenso(ordernarEmCentenas(numero)))
+    return numeroPorExtenso(centenasExtenso(ordernarEmCentenas(numero)));
 }
 
