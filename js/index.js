@@ -30,18 +30,12 @@ function isDezenaDez(numero) {
 }
 
 function ordernarEmCentenas(numero) {
-    const strNumero = numero.toString();
-    let centenas = [];
-    for(let i = 0; i < quantidadeCentenasDeTres(numero); i++) {    
-        centenas.unshift(parseInt(strNumero.slice(strNumero.length - 3 * (i+1), strNumero.length - 3 * ((i+1) - 1))));
-    }
+    const strNumero = numero.toString().split('').reverse().join('');
+    const regexCentenas = /\d\d?\d?/g;
 
-    if(isNaoSomenteCentenasDeTres(numero)) {
-        let qtdRestante = isNaoSomenteCentenasDeTres(numero);
-        centenas.unshift(parseInt(strNumero.slice(0, qtdRestante))); 
-    }   
-
-    return centenas;
+    return strNumero.match(regexCentenas).reverse().map(function(item){
+        return parseInt(item.split('').reverse().join(''));
+    });
 }
 
 function centenasExtenso(centenas) {
@@ -113,4 +107,3 @@ function numeroPorExtenso(centenas) {
 function converterNumeroParaExtenso(numero) {
     return numeroPorExtenso(centenasExtenso(ordernarEmCentenas(numero)));
 }
-

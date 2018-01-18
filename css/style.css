@@ -8,9 +8,9 @@
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    color: var(--base);
     background: #ECECEC;
+    color: var(--base);
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -21,10 +21,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type="number"] {
     border-radius: .25rem;
-    padding: .5rem;
     background-color: #FDFDFD;
     border: 1px solid #cccccc;
     font-size: 1.5rem;
+    padding: .5rem;
     width: 100%;    
     -moz-appearance:textfield;
 }
@@ -62,16 +62,15 @@ h1 {
 }
 
 .btn {
-    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--primary);
     border: none;
+    border-bottom: 3px solid #0058b8;
     border-radius: .3rem;
+    color: #FFF;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.3rem;
-    font-weight: bold;
     padding: .8rem 1rem;
     margin-top: .6rem;
-    border-bottom: 3px solid #0058b8;
-    color: #FFF;
-    background-color: var(--primary);
 }
 
 @media screen and (max-width: 48rem) {
