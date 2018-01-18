@@ -21,7 +21,7 @@ function quantidadeCentenasDeTres(numero) {
 }
 
 function isNaoSomenteCentenasDeTres(numero) {
-    const qtdNumerosRestantes = parseInt(numero.toString().length) - quantidadeCentenasDeTres(numero)*3;
+    const qtdNumerosRestantes = parseInt(numero.toString().length) - quantidadeCentenasDeTres(numero) * 3;
     return qtdNumerosRestantes === 0 ? false : qtdNumerosRestantes;
 }
 
@@ -29,13 +29,17 @@ function isDezenaDez(numero) {
     return numero > 10 && numero < 20;
 }
 
+function revertStr(str) {
+    return str.split('').reverse().join('');
+}
+
 function ordernarEmCentenas(numero) {
-    const strNumero = numero.toString().split('').reverse().join('');
+    const strNumeroReverted = revertStr(numero.toString());
     const regexCentenas = /\d\d?\d?/g;
 
-    return strNumero.match(regexCentenas).reverse().map(function(item){
-        return parseInt(item.split('').reverse().join(''));
-    });
+    return strNumeroReverted.match(regexCentenas).reverse().map(item =>
+        parseInt(revertStr(item))
+    );
 }
 
 function centenasExtenso(centenas) {
