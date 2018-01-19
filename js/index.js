@@ -89,9 +89,7 @@ function numeroPorExtenso(centenas) {
         
             return num;
         }     
-    }).filter(item => {
-        return item !== undefined;
-    }).map((item, index, arr)  => {
+    }).filter(item => item !== undefined).map((item, index, arr) => {
         if (index < arr.length - 2) {
             item += ', ';
         }
