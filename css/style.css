@@ -1,111 +1,111 @@
 :root {
-    --base: #111;
-    --primary: #006EE6;
+--base: #111;
+--primary: #006EE6;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background: #ECECEC;
-    color: var(--base);
-    font-family: Helvetica, Arial, sans-serif;
+  background: #ECECEC;
+  color: var(--base);
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type="number"] {
-    border-radius: .25rem;
-    background-color: #FDFDFD;
-    border: 1px solid #cccccc;
-    font-size: 1.5rem;
-    padding: .5rem;
-    width: 100%;    
-    -moz-appearance:textfield;
+  border-radius: .25rem;
+  background-color: #FDFDFD;
+  border: 1px solid #cccccc;
+  font-size: 1.5rem;
+  padding: .5rem;
+  width: 100%;
+  -moz-appearance:textfield;
 }
 
 label {
-    font-size: 1.5rem;
-    display: block;
-    line-height: 1.4rem;
+  font-size: 1.5rem;
+  display: block;
+  line-height: 1.4rem;
 }
 
 h1 {
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-#numero-por-extenso {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 1.5rem;
+[data-js="numero-por-extenso"] {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
-#numero-por-extenso::first-letter {
-    text-transform: uppercase;
+[data-js="numero-por-extenso"]::first-letter {
+  text-transform: uppercase;
 }
 
 .container {
-    max-width: 960px;
-    padding: 0 1rem;
+  max-width: 960px;
+  padding: 0 1rem;
 }
 
 .marginx-auto {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn {
-    background-color: var(--primary);
-    border: none;
-    border-bottom: 3px solid #0058b8;
-    border-radius: .3rem;
-    color: #FFF;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.3rem;
-    padding: .8rem 1rem;
-    margin-top: .6rem;
+  background-color: var(--primary);
+  border: none;
+  border-bottom: 3px solid #0058b8;
+  border-radius: .3rem;
+  color: #FFF;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  padding: .8rem 1rem;
+  margin-top: .6rem;
 }
 
 @media screen and (max-width: 48rem) {
-    h1 {
-        font-size: 2rem;
-    }
-    
-    input[type="number"] {
-        font-size: 1.3rem;
-    }
-    
-    #numero-por-extenso {
-        font-size: 1.3rem;
-    }
+  h1 {
+    font-size: 2rem;
+  }
 
-    label {
-        font-size: 1.2rem;
-    }
+  input[type="number"] {
+    font-size: 1.3rem;
+  }
+
+  #numero-por-extenso {
+    font-size: 1.3rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 37rem) {
-    .btn {
-        width: 100%;
-    }
+  .btn {
+    width: 100%;
+  }
 
-    h1 {
-        font-size: 1.5rem;
-    }
+  h1 {
+    font-size: 1.5rem;
+  }
 
-    #numero-por-extenso {
-        font-size: 1.2rem;
-    }
-    
-    label {
-        font-size: 1.1rem;
-    }
+  #numero-por-extenso {
+    font-size: 1.2rem;
+  }
+
+  label {
+    font-size: 1.1rem;
+  }
 }
