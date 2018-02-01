@@ -83,7 +83,7 @@ h1 {
     font-size: 1.3rem;
   }
 
-  #numero-por-extenso {
+  [data-js="numero-por-extenso"] {
     font-size: 1.3rem;
   }
 
@@ -101,7 +101,7 @@ h1 {
     font-size: 1.5rem;
   }
 
-  #numero-por-extenso {
+  [data-js="numero-por-extenso"] {
     font-size: 1.2rem;
   }
 
