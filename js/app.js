@@ -1,4 +1,5 @@
 const conversor = (function(){
+  'use strict';
 
   const numeroExtenso = {
     unidades: [
