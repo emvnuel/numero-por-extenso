@@ -17,6 +17,7 @@ const conversor = (function(){
   };
 
   const escalasPlural = ['mil', 'milhões', 'bilhões', 'trilhões', 'quatrilhões', 'quintilhões', 'sextilhões', 'septilhões', 'octilhões'];
+  const escalasSingular = ['mil', 'milhão', 'bilhão', 'trilhão', 'quatrilhão', 'quintilhão', 'sextilhão', 'septilhão', 'octilhão']
 
   function isDezenaDez(numero) {
     return numero > 10 && numero < 20;
@@ -77,10 +78,18 @@ const conversor = (function(){
   function numeroPorExtenso(centenas) {
     const numExtenso = centenas.map((item, index) => {
       if (item) {
-        let num = centenas.length - index - 1 !== 0 ?
-          item + ' ' + escalasPlural[centenas.length - index - 2] : item;
-
-        return num;
+        if (item === 'um') {
+          if (escalasSingular[centenas.length - index - 2] === escalasSingular[0]) {
+            return escalasSingular[0];
+          }
+          return centenas.length - index - 1 !== 0 ?
+          item + ' ' + escalasSingular[centenas.length - index - 2] : item;
+        }
+        if (item === 'cento') {
+          item = 'cem';
+        }
+        return centenas.length - index - 1 !== 0 ?
+        item + ' ' + escalasPlural[centenas.length - index - 2] : item;
       }
     }).filter(item => item !== undefined).map((item, index, arr) => {
       if (index < arr.length - 2) {

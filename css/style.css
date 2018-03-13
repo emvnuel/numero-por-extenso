@@ -56,9 +56,6 @@ body {
 .container {
   max-width: 960px;
   padding: 0 1rem;
-}
-
-.marginx-auto {
   margin-left: auto;
   margin-right: auto;
 }
@@ -104,6 +101,7 @@ body {
 
   .numero-por-extenso {
     font-size: 1.2rem;
+    margin-top: 1.5rem;
   }
 
   .form-label {
