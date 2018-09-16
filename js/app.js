@@ -79,9 +79,6 @@ const conversor = (function(){
     const numExtenso = centenas.map((item, index) => {
       if (item) {
         if (item === 'um') {
-          if (escalasSingular[centenas.length - index - 2] === escalasSingular[0]) {
-            return escalasSingular[0];
-          }
           return centenas.length - index - 1 !== 0 ?
           item + ' ' + escalasSingular[centenas.length - index - 2] : item;
         }
